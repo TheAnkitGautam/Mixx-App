@@ -13,6 +13,7 @@ import {
 import "./URL.css";
 import { FileData } from "../Models/File";
 import axios from "axios";
+import secrets from "../secrets";
 
 interface COMMENTProps {
   loginfunction: (loginMetadata: LoginMetadata | null) => void;
@@ -44,7 +45,7 @@ const COMMENT: React.FC<COMMENTProps> = ({
     >
       <form onSubmit={(e) => {
         e.preventDefault();
-        axios.post("http://localhost:5000/project/addCTT", {
+        axios.post(`${secrets.API_BASE_URL}/project/addCTT`, {
           projectId: file._id,
           userId: loginMetadata.id,
           timeStampStart: start_time,

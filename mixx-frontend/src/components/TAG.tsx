@@ -29,6 +29,7 @@ import {
 import "./URL.css";
 import axios from "axios";
 import { FileData } from "../Models/File";
+import secrets from "../secrets";
 
 interface TAGProps {
   loginfunction: (loginMetadata: LoginMetadata | null) => void;
@@ -64,7 +65,7 @@ const URL: React.FC<TAGProps> = ({
     >
       <form onSubmit={(e) => {
         e.preventDefault();
-        axios.post("http://localhost:5000/project/addCTT", {
+        axios.post(`${secrets.API_BASE_URL}/project/addCTT`, {
           projectId: file._id,
           userId: loginMetadata.id,
           timeStampStart: start_time,

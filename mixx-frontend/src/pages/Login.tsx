@@ -9,6 +9,7 @@ import { LoginMetadata } from "../Models/LoginMetadata";
 import music from "./../Assets/music.png";
 import symbol from "./../Assets/symbol.png";
 import Register from "./Register";
+import secrets from "../secrets";
 
 interface LoginProps {
   loginfunction: (loginMetadata: LoginMetadata | null) => void;
@@ -81,7 +82,7 @@ const Login: React.FC<LoginProps> = ({ loginfunction, loginMetadata }) => {
               onSubmit={(event) => {
                 event.preventDefault();
                 axios
-                  .post("http://localhost:5000/auth/login", {
+                  .post(`${secrets.API_BASE_URL}/auth/login`, {
                     email: email,
                     password: password,
                   })

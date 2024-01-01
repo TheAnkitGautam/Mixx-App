@@ -8,6 +8,7 @@ import axios from "axios";
 import { LoginMetadata } from "../Models/LoginMetadata";
 import music from "./../Assets/music.png";
 import symbol from "./../Assets/symbol.png";
+import secrets from "../secrets";
 
 let name = "";
 let email = "";
@@ -79,7 +80,7 @@ const Register: React.FC<RegisterProps> = ({
               onSubmit={(e) => {
                 e.preventDefault();
                 axios
-                  .post("http://localhost:5000/auth/register", {
+                  .post(`${secrets.API_BASE_URL}/auth/register`, {
                     name: name,
                     email: email,
                     password: password,

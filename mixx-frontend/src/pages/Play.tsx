@@ -13,6 +13,7 @@ import TAG from "../components/TAG";
 import { FileData } from "../Models/File";
 import { CT } from "../Models/CT";
 import axios from "axios";
+import secrets from "../secrets";
 // import Waveform from "./Waveform";
 
 // const tracks = [
@@ -63,7 +64,7 @@ const Audio: React.FC<AudioProps> = ({
   }, [])
 
   const getData = () => {
-    axios.post("http://localhost:5000/project/getAllCTT", {
+    axios.post(`${secrets.API_BASE_URL}/project/getAllCTT`, {
       projectId: file._id,
     }).then((res: any) => {
       setCTData(res.data);

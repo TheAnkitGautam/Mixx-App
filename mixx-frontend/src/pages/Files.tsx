@@ -18,6 +18,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import axios from "axios";
 import { FileData } from "../Models/File";
 import Play from "./Play";
+import secrets from "../secrets";
 
 interface FilesProps {
   loginfunction: (loginMetadata: LoginMetadata | null) => void;
@@ -52,7 +53,7 @@ const Files: React.FC<FilesProps> = ({
 
   const deleteFile = async (id: string) => {
     await axios
-      .post("http://localhost:5000/project/delete", {
+      .post(`${secrets.API_BASE_URL}/project/delete`, {
         projectId: id,
         userId: loginMetadata.id,
       })
@@ -92,7 +93,7 @@ const Files: React.FC<FilesProps> = ({
   const getData = async () => {
     isLoading(true);
     await axios
-      .post("http://localhost:5000/project/getAllProjects", {
+      .post(`${secrets.API_BASE_URL}/project/getAllProjects`, {
         userId: loginMetadata.id,
       })
       .then((res: any) => {

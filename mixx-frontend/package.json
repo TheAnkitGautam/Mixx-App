@@ -51,7 +51,7 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "HTTPS=false react-scripts start",
+    "start": "HTTPS=false react-scripts start --legacy-peer-deps",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
     "eject": "react-scripts eject"

@@ -76,7 +76,7 @@ const Home: React.FC<HomeProps> = ({ loginfunction, loginMetadata, menu, setSide
 
     const uploadFileToServer = () => {
         if (!selectedFileUpload) {
-            axios.post(`http://localhost:5000/upload-url`, {
+            axios.post(`${secrets.API_BASE_URL}/upload-url`, {
                 videoUrl: videoUrl,
                 audioFormat: selectedFormat,
                 userId: loginMetadata.id
