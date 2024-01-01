@@ -2,5 +2,3 @@ node_modules
 *.mp4
 firebase-admin-creds.json
 .env
-uploads_folder/*
-output_folder/*
