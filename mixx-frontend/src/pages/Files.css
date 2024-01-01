@@ -1,0 +1,83 @@
+.filePage {
+  background-image: url("./../Assets/bg1.svg");
+}
+
+.filePageContent {
+  /* --background-image: url("./../Assets/bg1.svg"); */
+  --background: none !important;
+}
+
+.searchbarBorder {
+  justify-content: center;
+}
+
+.spinLoad {
+  width: 100px;
+  height: 100px;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.download-icon {
+  color: white;
+}
+
+.searchBar1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 60%;
+  --background: #575757;
+  --border-radius: 25px;
+  --color: white;
+  box-shadow: -4px -4px 36px rgb(0 0 0 / 20%), 4px 4px 36px rgb(0 0 0 / 20%),
+    inset 0px 8px 36px rgb(0 0 0 / 16%);
+}
+
+@media (min-width: 1300px) {
+  .searchBar1 {
+    width: 70%;
+  }
+
+  .fileTop {
+    width: 70% !important;
+  }
+}
+
+.fileTop {
+  margin-bottom: 10px;
+  width: 60%;
+  --background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  --color: #0744c6;
+  font-weight: 700;
+  box-shadow: -4px -4px 36px rgb(0 0 0 / 20%), 4px 4px 36px rgb(0 0 0 / 20%),
+    inset 0px 8px 36px rgb(0 0 0 / 16%);
+}
+
+.fileDetails {
+  background: rgba(217, 217, 217, 0.4);
+  font-weight: 500;
+  font-size: 1rem;
+  min-height: 75vh;
+}
+
+.noFile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileValue {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed black;
+}
+
+.noproject {
+  color: white;
+  top: 60vh;
+  font-weight: 700;
+  font-size: 2rem;
+}

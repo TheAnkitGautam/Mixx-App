@@ -1,0 +1,143 @@
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: -4px -4px 36px rgba(0, 0, 0, 0.2), 4px 4px 48px rgba(0, 0, 0, 0.2),
+    inset 0px 8px 32px rgba(0, 0, 0, 0.16);
+  border-radius: 0px 45px 45px 0px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.sidebar-open {
+  width: 200px;
+}
+
+.topWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .navTop {
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+  height: 100px;
+}
+
+.avatar-open {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.avatar-close {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.navMiddle {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuLink {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.menuLink-open {
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.menuLink div {
+  padding: 0.75rem 1rem;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.menuLink .nav-title {
+  margin: 0 2rem 0 1.25rem;
+}
+
+.menuLink .icon {
+  color: #0744c6;
+}
+
+.menuLink .nav-title {
+  color: #707070;
+}
+
+.active {
+  background-color: #0744c6;
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+.active .icon {
+  color: #fff;
+}
+
+.active .nav-title {
+  color: #fff;
+}
+
+.navBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout {
+  background: #ffffff;
+  box-shadow: -4px -4px 36px rgba(0, 0, 0, 0.2), 4px 4px 48px rgba(0, 0, 0, 0.2),
+    inset 0px 8px 32px rgba(0, 0, 0, 0.16);
+  border-radius: 50px;
+  margin: 2rem 0;
+  width: max-content;
+  padding: 1rem;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logout span {
+  margin-left: 0.5rem;
+}
+
+.closeArrow {
+  margin-right: 10px;
+}
+
+.arrowWrapper {
+  cursor: pointer;
+}
+
+.side-img {
+  /* float: left; */
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+}
+
+.username {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,128 @@
+.container1 {
+  background-image: url("./../Assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.select {
+  width: 290px;
+  height: 65px;
+  border-radius: 35px;
+  margin: 10px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+  font-size: 1.1rem;
+}
+
+.select_file {
+  width: 290px;
+  height: 65px;
+  border-radius: 35px;
+  margin: 10px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 25px;
+  font-size: 1.1rem;
+}
+
+.main .convert {
+  background-color: #0744c6;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- */
+.dropdown {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 290px;
+  color: #fff;
+  border-radius: 50px;
+  padding-bottom: 40px;
+}
+
+.dropdown .dropdown-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 25px;
+  font-size: 1.1rem;
+}
+
+.dropdown .dropdown-list {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  padding: 5px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-icon {
+  margin-right: 10px;
+}
+
+.dropdown .dropdown-list-audio {
+  cursor: pointer;
+  justify-content: center;
+  margin-left: 0px;
+}
+
+.progressWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 65px;
+  width: 290px;
+  border-radius: 35px;
+}
+
+.progressValue {
+  position: relative;
+  bottom: 43px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.numberInput input[type=number]::-webkit-inner-spin-button,
+.numberInput input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

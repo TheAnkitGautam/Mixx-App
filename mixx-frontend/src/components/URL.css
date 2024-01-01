@@ -1,0 +1,49 @@
+.urlPopover {
+  --width: 50%;
+  --height: 170px;
+}
+
+.urlGrid {
+  padding: 0px 20px;
+}
+
+ion-popover.urlPopover::part(content) {
+  border-radius: 25px;
+}
+
+.urlCloseWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.urlClose {
+  cursor: pointer;
+  color: #0744c6;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.urlText {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.urlInputWrapper {
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.urlSubmit {
+  --border-radius: 30px;
+}
+
+.badges {
+  color: white;
+  display: flex;
+  position: absolute;
+  top: 9vh;
+  right: 2vw;
+}
